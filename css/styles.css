@@ -1,3 +1,38 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/roboto-v49-latin-300.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v49-latin-regular.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/roboto-v49-latin-italic.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/roboto-v49-latin-600.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v49-latin-700.woff2') format('woff2');
+}
 :root {
   --beauty-landing-2-background: #fff;
   --beauty-landing-2-s2: #2b7fff;
@@ -6,12 +41,22 @@
   --beauty-landing-2-s5: #747272;
   --beauty-landing-2-c6: #011f4a;
   --beauty-landing-2-s4: #ffd02b;
+
+  --font-family: 'Roboto', sans-serif;
+  --font4: 'Play', sans-serif; /*  ?   */
+  --third-family: 'Play', sans-serif;
 }
 ul {
   list-style-type: none;
 }
 body {
   color: var(--beauty-landing-2-c1);
+  font-family: var(--font-family);
+  font-size: 18px;
+  font-weight: 400;
+}
+address {
+  font-style: normal;
 }
 
 .btn-main {
@@ -20,9 +65,7 @@ body {
   width: 219px;
   height: 53px;
   background: var(--beauty-landing-2-s2);
-  font-family: var(--font-family);
   font-weight: 600;
-  font-size: 18px;
   color: var(--beauty-landing-2-background);
   border: none;
   cursor: pointer;
@@ -33,18 +76,23 @@ body {
   color: var(--beauty-landing-2-c1);
 }
 .link {
+  text-decoration: none;
+  color: var(--beauty-landing-2-c1);
 }
 .link:hover {
   color: var(--beauty-landing-2-s2);
+  font-weight: 700;
 }
 .section-title {
+  font-family: var(--third-family);
   font-weight: 700;
   font-size: 64px;
+  text-align: center;
   color: var(--beauty-landing-2-c1);
 }
 /* ------------------HERO-------------------- */
 .hero-title {
-  font-family: var(--third-family);
+  font-family: var(--font4);
   font-weight: 700;
   font-size: 140px;
   line-height: 81%;
@@ -54,3 +102,69 @@ body {
 .accent {
   color: var(--beauty-landing-2-s2);
 }
+
+.about-us-title span {
+  text-transform: capitalize;
+}
+
+/*----------------ABOUT US------------------- */
+.about-us-title {
+  text-align: left;
+}
+.about-us-text {
+  font-size: 22px;
+  line-height: 173%;
+}
+.about-us-text-span {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+/*------------------WHY US------------------- */
+.why-us-text {
+  line-height: 133%;
+  text-align: center;
+}
+/*--------------OUR PROCEDURES--------------- */
+.our-procedures-second-title {
+  font-size: 22px;
+  line-height: 118%;
+  text-align: center;
+  /* color: var(--beauty-landing-2-background) */
+}
+/*-----------------CONTACTS------------------ */
+.contacts-second-title {
+  font-weight: 600;
+  font-size: 22px;
+  text-align: center;
+  /* color: var(--beauty-landing-2-background); */
+}
+.contacts-second-title span {
+  color: var(--beauty-landing-2-s2);
+}
+/*------------------FOOTER------------------- */
+.footer {
+  background: var(--beauty-landing-2-c1);
+}
+.footer-nav {
+  font-size: 16px;
+}
+.footer-nav-list {
+}
+.footer-link{
+  color: var(--beauty-landing-2-background);
+}
+.footer-address-link {
+  font-size: 16px;
+  color: var(--beauty-landing-2-background);
+  text-decoration: none;
+}
+.footer-address-link:hover {
+  color: var(--beauty-landing-2-s2);
+  font-weight: 700;
+}
+.footer-address-copyright {
+  font-size: 13px;
+  color: var(--beauty-landing-2-s5);
+}
+/*------------------MODEL------------------- */
