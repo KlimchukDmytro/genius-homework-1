@@ -33,6 +33,21 @@
   font-weight: 700;
   src: url('../fonts/roboto-v49-latin-700.woff2') format('woff2');
 }
+@font-face {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Play-Regular.woff2') format('woff2'),
+       url('../fonts/Play-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/Play-Bold.woff2') format('woff2'),
+       url('../fonts/Play-Bold.ttf') format('truetype');
+}
+
 :root {
   --beauty-landing-2-background: #fff;
   --beauty-landing-2-s2: #2b7fff;
@@ -43,7 +58,7 @@
   --beauty-landing-2-s4: #ffd02b;
 
   --font-family: 'Roboto', sans-serif;
-  --font4: 'Play', sans-serif; /*  ?   */
+  --font4: 'Play', sans-serif;
   --third-family: 'Play', sans-serif;
 }
 * {
